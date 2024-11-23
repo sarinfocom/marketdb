@@ -6,6 +6,7 @@ on:
 jobs:
 
   job1:
+    name: Job 1
     runs-on: marketdb
     steps:
 
@@ -21,7 +22,14 @@ jobs:
           cal 2025 > cal.txt
           whoami
 
+          
+      - name: Check Python version
+        run: |
+          python --version
+          which python
+
   job2:
+    name: Job 2
     runs-on: marketdb
     steps:
       - name: Run
@@ -31,6 +39,7 @@ jobs:
 
 
   job3:
+    name: Job 3
     runs-on: marketdb
     steps:
       - name: Run
