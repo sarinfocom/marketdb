@@ -14,3 +14,6 @@ jobs:
           ls -la
           pwd
           date
+          cal 2025 > cal.txt
+          whoami
+          
