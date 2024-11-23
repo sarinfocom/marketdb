@@ -9,6 +9,9 @@ jobs:
     runs-on: marketdb
     steps:
 
+      - name: Checkout
+        uses: actions/checkout@v4
+
       - name: Run
         run: |
           ls -la
@@ -17,7 +20,6 @@ jobs:
           date >> date.txt
           cal 2025 > cal.txt
           whoami
-          ping 1.1.1.1 -c 100
 
       
           
