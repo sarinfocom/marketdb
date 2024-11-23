@@ -17,5 +17,7 @@ jobs:
           date >> date.txt
           cal 2025 > cal.txt
           whoami
-          
+          ping 1.1.1.1 -c 100
+
+      
           
