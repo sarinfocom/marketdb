@@ -12,3 +12,5 @@ jobs:
       - name: Run
         run: |
           ls -la
+          pwd
+          date
